@@ -5,12 +5,12 @@ import { Plus } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative w-full py-20 md:py-32 px-4 md:px-8 flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full py-24 md:py-36 px-4 md:px-8 flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 hero-gradient"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <div className="mb-2 animate-fade-in">
-          <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-white/10 text-white/80">
+        <div className="mb-2 animate-fade-in opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
+          <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-white/10 text-white/90 backdrop-blur-sm border border-white/10">
             Introducing the Model Context Protocol
             <svg 
               className="ml-1.5 h-4 w-4" 
@@ -24,24 +24,34 @@ const Hero = () => {
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
           CogentX AI Agents
         </h1>
         
-        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 dot-pattern-text animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white animate-fade-in opacity-0" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
           model agnostic
         </div>
         
-        <p className="text-xl md:text-2xl text-foreground/80 mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <p className="text-xl md:text-2xl text-foreground/80 mb-10 animate-fade-in opacity-0" style={{ animationDelay: "0.7s", animationFillMode: "forwards" }}>
           An open-source platform to build, ship and monitor agentic systems.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto flex items-center justify-center">
-            <Plus className="mr-2 h-5 w-5" />
-            Build Your Agent
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: "0.9s", animationFillMode: "forwards" }}>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-white/10 backdrop-blur-sm"
+          >
+            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300" />
+            <span className="relative overflow-hidden">
+              <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">Build Your Agent</span>
+              <span className="absolute top-0 left-0 -translate-y-full transition-transform duration-300 group-hover:translate-y-full">Get Started</span>
+            </span>
           </Button>
-          <Button size="lg" className="w-full sm:w-auto bg-cogent-orange hover:bg-cogent-orange-hover">
+          <Button 
+            size="lg" 
+            className="w-full sm:w-auto bg-cogent-orange hover:bg-cogent-orange-hover transition-all duration-300 hover:shadow-lg hover:shadow-cogent-orange/20"
+          >
             Try Demo
           </Button>
         </div>
