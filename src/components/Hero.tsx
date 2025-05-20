@@ -43,10 +43,10 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-cogent-red/10 backdrop-blur-sm border-cogent-red/20 hover:border-cogent-red/40"
+            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-cogent-red/10 backdrop-blur-sm border-cogent-red/30 hover:border-cogent-red/60 text-white"
             onClick={redirectToCogentX}
           >
-            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300 text-cogent-red" />
+            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300 text-cogent-orange-dark" />
             <span className="relative overflow-hidden">
               <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">Build Your Agent</span>
               <span className="absolute top-0 left-0 -translate-y-full transition-transform duration-300 group-hover:translate-y-full">Get Started</span>
@@ -54,7 +54,7 @@ const Hero = () => {
           </Button>
           <Button 
             size="lg" 
-            className="w-full sm:w-auto bg-gradient-to-r from-cogent-orange to-cogent-red hover:from-cogent-orange-light hover:to-cogent-red-hover transition-all duration-300 hover:shadow-lg hover:shadow-cogent-red/20"
+            className="w-full sm:w-auto bg-gradient-to-r from-cogent-orange-dark to-cogent-red-dark hover:from-cogent-orange hover:to-cogent-red transition-all duration-300 hover:shadow-lg hover:shadow-cogent-red/20 text-white font-medium"
             onClick={redirectToCogentX}
           >
             Try Demo

@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-3">
         <Button 
           size="sm" 
-          className="bg-gradient-to-r from-cogent-orange to-cogent-red hover:from-cogent-orange-light hover:to-cogent-red-hover"
+          className="bg-gradient-to-r from-cogent-orange-dark to-cogent-red-dark hover:from-cogent-orange hover:to-cogent-red text-white font-medium"
           onClick={redirectToCogentX}
         >
           Try Demo
