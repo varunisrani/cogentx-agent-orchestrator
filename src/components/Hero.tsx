@@ -27,11 +27,11 @@ const Hero = () => {
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in opacity-0 bg-gradient-to-r from-cogent-orange to-cogent-green bg-clip-text text-transparent" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
           CogentX AI Agent
         </h1>
         
-        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white animate-fade-in opacity-0" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
+        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white animate-fade-in opacity-0 bg-gradient-to-r from-cogent-green to-cogent-orange bg-clip-text text-transparent" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
           Model Context Protocol
         </div>
         
@@ -43,10 +43,10 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-white/10 backdrop-blur-sm"
+            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-cogent-green/10 backdrop-blur-sm border-cogent-green/30"
             onClick={redirectToCogentX}
           >
-            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300" />
+            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300 text-cogent-green" />
             <span className="relative overflow-hidden">
               <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">Build Your Agent</span>
               <span className="absolute top-0 left-0 -translate-y-full transition-transform duration-300 group-hover:translate-y-full">Get Started</span>

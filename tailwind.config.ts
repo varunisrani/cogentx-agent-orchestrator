@@ -64,10 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				cogent: {
-					dark: '#161616',
+					dark: '#141810',
 					black: '#000000',
 					orange: '#FF4D16',
 					'orange-hover': '#FF6A3C',
+					green: '#228B22',
+					'green-hover': '#2E9E2E',
+					'green-dark': '#1A6B1A',
+					'green-light': '#5CB85C',
 					gray: '#2D2D2D',
 					'light-gray': '#3E3E3E',
 				}

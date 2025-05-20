@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="w-full py-4 px-4 md:px-8 flex items-center justify-between backdrop-blur-sm bg-background/50 sticky top-0 z-50 border-b border-white/10">
       <div className="flex items-center">
         <a href="/" className="flex items-center">
-          <span className="font-display text-xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">CogentX</span>
+          <span className="font-display text-xl font-bold bg-gradient-to-r from-cogent-orange to-cogent-green bg-clip-text text-transparent">CogentX</span>
         </a>
       </div>
 
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-3">
         <Button 
           size="sm" 
-          className="bg-cogent-orange hover:bg-cogent-orange-hover"
+          className="bg-cogent-green hover:bg-cogent-green-hover"
           onClick={redirectToCogentX}
         >
           Try Demo
