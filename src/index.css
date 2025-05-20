@@ -25,26 +25,26 @@
     --muted: 0 0% 24%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 0 0% 24%;
+    --accent: 0 84% 60%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 92% 50%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 24%;
     --input: 0 0% 24%;
-    --ring: 16 100% 54%;
+    --ring: 0 92% 50%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 9%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 16 100% 54%;
+    --sidebar-primary: 0 92% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 18%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 24%;
-    --sidebar-ring: 16 100% 54%;
+    --sidebar-ring: 0 92% 50%;
   }
 }
 
@@ -65,7 +65,7 @@
   }
   
   .hero-gradient {
-    background: radial-gradient(circle at center, rgba(70, 70, 70, 0.35) 0%, rgba(28, 28, 28, 0.15) 50%, rgba(22, 22, 22, 0) 70%);
+    background: radial-gradient(circle at center, rgba(229, 9, 20, 0.15) 0%, rgba(255, 77, 22, 0.10) 40%, rgba(22, 22, 22, 0) 70%);
     animation: pulse-gradient 8s ease-in-out infinite;
   }
 
@@ -83,7 +83,7 @@
   .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
-    border-color: rgba(255, 77, 22, 0.3);
+    border-color: rgba(255, 61, 22, 0.3);
     background: linear-gradient(135deg, #2F2F2F 0%, #1c1c1c 100%);
   }
 
@@ -95,7 +95,18 @@
 
   .feature-card:hover .feature-icon {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px -5px rgba(255, 77, 22, 0.2);
+    box-shadow: 0 10px 20px -5px rgba(255, 59, 22, 0.2);
+  }
+  
+  .orange-red-gradient {
+    background: linear-gradient(90deg, #FF4D16 0%, #E50914 100%);
+  }
+  
+  .orange-red-text {
+    background: linear-gradient(90deg, #FF4D16 0%, #E50914 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   
   @keyframes float {
