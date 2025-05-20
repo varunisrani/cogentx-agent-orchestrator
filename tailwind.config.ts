@@ -68,6 +68,11 @@ export default {
 					black: '#000000',
 					orange: '#FF4D16',
 					'orange-hover': '#FF6A3C',
+					'orange-light': '#FFA500',
+					'orange-dark': '#D13800', // Darker orange for better contrast
+					red: '#FF0000',
+					'red-hover': '#FF3333',
+					'red-dark': '#CC0000',
 					gray: '#2D2D2D',
 					'light-gray': '#3E3E3E',
 				}

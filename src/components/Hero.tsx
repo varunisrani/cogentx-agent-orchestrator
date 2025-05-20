@@ -13,10 +13,10 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <div className="mb-2 animate-fade-in opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
-          <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-white/10 text-white/90 backdrop-blur-sm border border-white/10">
+          <span className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-gradient-to-r from-cogent-red/10 to-cogent-orange/10 text-white/90 backdrop-blur-sm border border-cogent-orange/20">
             Introducing MCP
             <svg 
-              className="ml-1.5 h-4 w-4" 
+              className="ml-1.5 h-4 w-4 text-cogent-orange" 
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24" 
@@ -27,11 +27,11 @@ const Hero = () => {
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight animate-fade-in opacity-0 bg-gradient-to-r from-cogent-red to-cogent-orange bg-clip-text text-transparent" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
           CogentX AI Agent
         </h1>
         
-        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white animate-fade-in opacity-0" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
+        <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white animate-fade-in opacity-0 bg-gradient-to-r from-cogent-orange-light to-cogent-red bg-clip-text text-transparent" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
           Model Context Protocol
         </div>
         
@@ -43,10 +43,10 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-white/10 backdrop-blur-sm"
+            className="w-full sm:w-auto flex items-center justify-center group transition-all duration-300 hover:bg-cogent-red/10 backdrop-blur-sm border-cogent-red/30 hover:border-cogent-red/60 text-white"
             onClick={redirectToCogentX}
           >
-            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300" />
+            <Plus className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90 duration-300 text-cogent-orange-dark" />
             <span className="relative overflow-hidden">
               <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">Build Your Agent</span>
               <span className="absolute top-0 left-0 -translate-y-full transition-transform duration-300 group-hover:translate-y-full">Get Started</span>
@@ -54,7 +54,7 @@ const Hero = () => {
           </Button>
           <Button 
             size="lg" 
-            className="w-full sm:w-auto bg-cogent-orange hover:bg-cogent-orange-hover transition-all duration-300 hover:shadow-lg hover:shadow-cogent-orange/20"
+            className="w-full sm:w-auto bg-gradient-to-r from-cogent-orange-dark to-cogent-red-dark hover:from-cogent-orange hover:to-cogent-red transition-all duration-300 hover:shadow-lg hover:shadow-cogent-red/20 text-white font-medium"
             onClick={redirectToCogentX}
           >
             Try Demo
