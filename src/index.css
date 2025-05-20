@@ -83,7 +83,7 @@
   .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
-    border-color: rgba(255, 77, 22, 0.3);
+    border-color: rgba(255, 77, 22, 0.4);
     background: linear-gradient(135deg, #2F2F2F 0%, #1c1c1c 100%);
   }
 
@@ -95,7 +95,8 @@
 
   .feature-card:hover .feature-icon {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px -5px rgba(255, 77, 22, 0.2);
+    box-shadow: 0 10px 20px -5px rgba(255, 77, 22, 0.25);
+    background: linear-gradient(135deg, rgba(255, 77, 22, 0.1) 0%, rgba(230, 57, 15, 0.05) 100%);
   }
   
   @keyframes float {
