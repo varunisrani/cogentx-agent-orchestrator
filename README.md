@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# CogentX Agent Orchestrator
 
-## Project info
+CogentX Agent Orchestrator is a Vite-powered product-site prototype presenting a Model Context Protocol-based vision for building and coordinating specialized AI agents.
 
-**URL**: https://lovable.dev/projects/31cd70d7-e74e-484e-b563-9e8caaaa05bb
+## Core features
 
-## How can I edit this code?
+- Responsive single-page product site with hero, features, information, and footer sections.
+- Presentation of compliance, data, custom, legal, and marketing agent categories.
+- Explanation of MCP concepts and multi-agent collaboration.
+- Example workflow for a football highlights creator agent.
+- Client-side routing with a custom not-found page.
+- Reusable shadcn-style UI component collection.
 
-There are several ways of editing your application.
+## Technology stack
 
-**Use Lovable**
+- Vite 5, React 18, and TypeScript
+- React Router and TanStack Query
+- Tailwind CSS and Radix UI primitives
+- shadcn-style components, Lucide icons, and Sonner notifications
+- ESLint 9
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/31cd70d7-e74e-484e-b563-9e8caaaa05bb) and start prompting.
+## Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js and npm
 
-**Use your preferred IDE**
+## Local setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/varunisrani/cogentx-agent-orchestrator.git
+cd cogentx-agent-orchestrator
+npm ci
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Vite prints the local development URL when it starts.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Build, preview, and lint commands:
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm run preview
+npm run lint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For a development-mode build, run `npm run build:dev`.
 
-## What technologies are used for this project?
+## Configuration
 
-This project is built with:
+No environment variables are referenced by the application source.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project structure
 
-## How can I deploy this project?
+- `src/main.tsx` — browser entry point.
+- `src/App.tsx` — providers and route definitions.
+- `src/pages/` — landing and not-found pages.
+- `src/components/` — product-site sections and reusable UI components.
+- `src/hooks/` and `src/lib/` — shared hooks and utilities.
+- `public/` — static assets.
+- `vite.config.ts` and `tailwind.config.ts` — build and styling configuration.
 
-Simply open [Lovable](https://lovable.dev/projects/31cd70d7-e74e-484e-b563-9e8caaaa05bb) and click on Share -> Publish.
+## Status and limitations
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This is a static product presentation. It does not implement agent creation, orchestration, MCP connectivity, model calls, monitoring, authentication, or persistence. Calls to action are visual and no backend/API integration is present. No automated test script is defined.
